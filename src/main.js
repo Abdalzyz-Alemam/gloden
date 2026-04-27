@@ -1,11 +1,12 @@
 
+// استيراد ملف التنسيق الأساسي (Tailwind CSS)
 import './index.css';
 
-// Full Menu data extracted from all provided images with precise categorization
+// قائمة أصناف المنيو - تحتوي على كافة البيانات (الاسم، السعر، التصنيف، الصورة، والوصف)
 const menuItems = [
-  // --- DRINKS (Categorized) ---
+  // --- المشروبات (Drinks) ---
   
-  // Fresh Juices (Image 1)
+  // العصائر الطبيعية (Fresh Juices)
   { id: 1, title: 'عصير قولدن', price: '13,000', category: 'juices', image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&q=80&w=400' },
   { id: 2, title: 'ليمون بالنعناع', price: '7,000', category: 'juices', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
   { id: 3, title: 'ليمون بالحليب', price: '9,000', category: 'juices', image: 'https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=400' },
@@ -168,30 +169,33 @@ const menuItems = [
 
 ];
 
-// Initialize UI
+// دالة تهيئة الواجهة عند تحميل الصفحة
 function init() {
   const categoryButtons = document.querySelectorAll('.category-btn');
   const menuGrid = document.getElementById('menu-grid');
-  if (!menuGrid) return;
+  if (!menuGrid) return; // تأكد من وجود حاوية المنيو قبل البدء
 
-  // --- Search Logic ---
+  // --- منطق البحث (Search Logic) ---
   const searchBtn = document.getElementById('search-btn');
   const searchOverlay = document.getElementById('search-overlay');
   const closeSearch = document.getElementById('close-search');
   const searchInput = document.getElementById('search-input');
 
   if (searchBtn && searchOverlay) {
+    // فتح واجهة البحث
     searchBtn.addEventListener('click', () => {
       searchOverlay.classList.remove('opacity-0', 'pointer-events-none');
       searchInput.focus();
     });
 
+    // إغلاق واجهة البحث
     closeSearch.addEventListener('click', () => {
       searchOverlay.classList.add('opacity-0', 'pointer-events-none');
       searchInput.value = '';
-      renderItems(); // Reset view
+      renderItems(); // إعادة عرض كافة الأصناف بعد إغلاق البحث
     });
 
+    // استماع لعملية الإدخال في حقل البحث
     searchInput.addEventListener('input', (e) => {
       const term = e.target.value.toLowerCase().trim();
       if (term === '') {
@@ -199,6 +203,7 @@ function init() {
         return;
       }
 
+      // تصفية المصفوفة بناءً على الاسم أو الوصف
       const searchFiltered = menuItems.filter(item => 
         item.title.toLowerCase().includes(term) || 
         (item.description && item.description.toLowerCase().includes(term))
@@ -208,39 +213,43 @@ function init() {
     });
   }
 
-  // --- Language Toggle Logic ---
+  // --- منطق تبديل اللغة (Language Toggle) ---
   const langToggle = document.getElementById('lang-toggle');
   let currentLang = 'ar';
   
   if (langToggle) {
     langToggle.addEventListener('click', () => {
+      // تبديل المتغير بين العربي والإنجليزي
       currentLang = currentLang === 'ar' ? 'en' : 'ar';
       document.documentElement.lang = currentLang;
       document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
       
-      // Update UI texts that have data-ar/data-en
+      // تحديث كافة النصوص التي تحتوي على سمات data-ar و data-en
       document.querySelectorAll('[data-ar]').forEach(el => {
         el.textContent = el.getAttribute(`data-${currentLang}`);
       });
 
-      // Update placeholders
+      // تحديث نص تلميح البحث (Placeholder)
       if (searchInput) {
         searchInput.placeholder = currentLang === 'ar' ? 'مثلاً: بيتزا، عصير، آيس كريم...' : 'Example: Pizza, Juice, Ice Cream...';
       }
     });
   }
 
+  // دالة عرض الأصناف بناءً على قائمة محددة
   function renderItemsFromList(itemsList) {
     menuGrid.innerHTML = '';
     
-    // Grouping logic for items list
+    // منطق تجميع الأصناف المتشابهة (للتعامل مع الأحجام المختلفة تحت بطاقة واحدة)
     const groups = [];
     const processedTitles = new Set();
 
     itemsList.forEach(item => {
+      // استخراج الاسم الأساسي بدون الحجم المكتوب بين قوسين
       const baseTitle = item.title.split(' (')[0];
       if (processedTitles.has(baseTitle)) return;
 
+      // العثور على جميع الأحجام لنفس الصنف
       const groupItems = itemsList.filter(mi => mi.title.startsWith(baseTitle));
       
       groups.push({
@@ -252,6 +261,7 @@ function init() {
       processedTitles.add(baseTitle);
     });
 
+    // إنشاء وعرض البطاقات لكل مجموعة
     groups.forEach((group, index) => {
       const card = document.createElement('div');
       card.className = 'menu-card opacity-0 translate-y-4 transition-all duration-500 ease-out cursor-pointer';
@@ -259,6 +269,7 @@ function init() {
       
       let priceDisplay = '';
       if (group.items.length > 1) {
+        // ترتيب الأحجام من الأكبر سعراً إلى الأقل (أو العكس حسب الرغبة)
         const sorted = [...group.items].sort((a, b) => {
           const getPrice = (p) => parseFloat(p.replace(/,/g, ''));
           return getPrice(b.price) - getPrice(a.price);
@@ -270,6 +281,7 @@ function init() {
           return `<span class="whitespace-nowrap">${sizeLabel} <span class="font-bold">${ri.price}</span></span>`;
         }).join(' <span class="mx-1 opacity-50">|</span> ');
       } else {
+        // عرض السعر لصنف وحيد
         priceDisplay = `<span class="font-extrabold text-lg md:text-xl">${group.items[0].price}</span> <span class="text-[10px] font-bold uppercase opacity-70">SDG</span>`;
       }
 
@@ -285,12 +297,15 @@ function init() {
         </div>
       `;
       
+      // فتح التفاصيل عند النقر
       card.addEventListener('click', () => openProductModal(group.items[0]));
       menuGrid.appendChild(card);
+      // تأثير الظهور التدريجي (Animation)
       requestAnimationFrame(() => card.classList.remove('opacity-0', 'translate-y-4'));
     });
   }
 
+  // الدالة الرئيسية لعرض الأصناف بناءً على التصنيف المختار
   function renderItems(filter = 'all') {
     const filteredItems = filter === 'all' 
       ? menuItems 
@@ -299,42 +314,37 @@ function init() {
     renderItemsFromList(filteredItems);
   }
 
-  // --- Modal Logic ---
+  // --- منطق النافذة المنبثقة (Modal Logic) ---
   const modal = document.getElementById('product-modal');
-  const modalContent = modal.querySelector('.relative.w-full');
+  const modalContent = modal ? modal.querySelector('.relative.w-full') : null;
   const modalImage = document.getElementById('modal-image');
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-description');
   const pricesContainer = document.getElementById('modal-prices-container');
 
+  if (!modal || !modalContent) return;
+
+  // فتح نافذة تفاصيل المنتج
   function openProductModal(item) {
-    // 1. Set Image & Basic Info
     modalImage.src = item.image;
-    
-    // Extract base title (remove size in parentheses if it exists)
     const baseTitle = item.title.split(' (')[0];
     modalTitle.textContent = baseTitle;
-    
     modalDesc.textContent = item.description || 'تذوق أشهى مذاق في كافيه قولدن، مجهز خصيصاً بمكونات طازجة وجودة عالية.';
 
-    // 2. Find Related Sizes
-    // We look for other items that start with the same base name
+    // جلب جميع الأحجام المرتبطة بهذا الصنف لعرضها في النافذة
     const relatedItems = menuItems.filter(mi => mi.title.startsWith(baseTitle));
-    
-    // 3. Render Prices
     pricesContainer.innerHTML = '';
     
     if (relatedItems.length > 0) {
+      // ترتيب الأحجام تصاعدياً حسب السعر
       relatedItems.sort((a, b) => {
-        // Sort by price (as number) or by size keyword
         const getPrice = (p) => parseFloat(p.replace(/,/g, ''));
         return getPrice(a.price) - getPrice(b.price);
       });
 
       relatedItems.forEach(ri => {
-        // Extract size label e.g., "وسط" from "بيتزا قولدن (وسط)"
         let sizeMatch = ri.title.match(/\((.*?)\)/);
-        let sizeLabel = sizeMatch ? sizeMatch[1] : 'عادي';
+        let sizeLabel = sizeMatch ? sizeMatch[1] : (currentLang === 'ar' ? 'عادي' : 'Regular');
         
         const priceRow = document.createElement('div');
         priceRow.className = 'flex justify-between items-center bg-white p-4 rounded-2xl shadow-sm border border-gray-50';
@@ -347,45 +357,36 @@ function init() {
         `;
         pricesContainer.appendChild(priceRow);
       });
-    } else {
-      // Single price if no relatives found (shouldn't happen with our data but safe)
-      const priceRow = document.createElement('div');
-      priceRow.className = 'flex justify-between items-center bg-white p-4 rounded-2xl shadow-sm border border-gray-50';
-      priceRow.innerHTML = `
-        <span class="text-gray-500 font-bold">السعر</span>
-        <div class="flex items-center gap-1">
-          <span class="text-golden text-xs font-bold pt-1">SDG</span>
-          <span class="text-black-gold text-xl font-extrabold">${item.price}</span>
-        </div>
-      `;
-      pricesContainer.appendChild(priceRow);
     }
 
-    // 4. Show Modal
+    // إظهار النافذة مع تأثير بسيط
     modal.classList.remove('opacity-0', 'pointer-events-none');
     setTimeout(() => {
       modalContent.classList.remove('scale-90');
       modalContent.classList.add('scale-100');
     }, 10);
-    document.body.style.overflow = 'hidden'; // Prevent scroll
+    document.body.style.overflow = 'hidden'; // منع السكرول عند فتح النافذة
   }
 
+  // إغلاق النافذة المنبثقة
   function closeModal() {
     modalContent.classList.remove('scale-100');
     modalContent.classList.add('scale-90');
     setTimeout(() => {
       modal.classList.add('opacity-0', 'pointer-events-none');
     }, 200);
-    document.body.style.overflow = ''; // Restore scroll
+    document.body.style.overflow = ''; // إعادة السكرول
   }
 
-  // Setup Close Listeners
+  // إضافة مستمعات إغلاق النافذة (عند الضغط على الخلفية أو أزرار الإغلاق)
   document.querySelectorAll('.modal-close-trigger').forEach(trigger => {
     trigger.addEventListener('click', closeModal);
   });
 
+  // إضافة مستمعات النقر لأزرار التصنيفات العلوية
   categoryButtons.forEach(btn => {
     btn.addEventListener('click', () => {
+      // تحديث شكل الزر المختار (نشط)
       categoryButtons.forEach(b => {
         b.classList.remove('bg-golden', 'text-white');
         b.classList.add('bg-white', 'text-gray-500');
@@ -398,14 +399,17 @@ function init() {
       const ind = btn.querySelector('.indicator');
       if (ind) ind.classList.remove('hidden');
 
+      // تصفية المنيو بناءً على التصنيف المختار
       const category = btn.getAttribute('data-category');
       renderItems(category);
     });
   });
 
+  // عرض المنيو لأول مرة (الكل)
   renderItems();
 }
 
+// بدء التشغيل عند اكتمال تحميل المستند
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {

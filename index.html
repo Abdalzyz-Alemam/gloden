@@ -31,13 +31,15 @@
     </style>
   </head>
   <body class="min-h-screen text-gray-900 overflow-x-hidden">
-    <!-- Header Controls -->
+    <!-- عناصر التحكم في رأس الصفحة (Header) -->
     <header class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 pointer-events-none">
+      <!-- زر الانستقرام -->
       <div class="flex items-center gap-3 pointer-events-auto">
         <button class="w-10 h-10 bg-black/20 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center text-white shadow-lg">
           <i data-lucide="instagram" class="w-5 h-5"></i>
         </button>
       </div>
+      <!-- أزرار تبديل اللغة والبحث -->
       <div class="flex items-center gap-3 pointer-events-auto">
         <button id="lang-toggle" class="w-10 h-10 bg-black/20 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-center text-white shadow-lg transition-all hover:bg-golden active:scale-95">
           <i data-lucide="languages" class="w-5 h-5"></i>
@@ -48,17 +50,17 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- قسم الواجهة الرئيسية (Hero Section) -->
     <section class="relative h-[45vh] w-full flex flex-col items-center justify-center overflow-hidden">
-      <!-- Background -->
+      <!-- خلفية الصورة مع تأثير التعتيم -->
       <div class="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200" alt="Cafe Background" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
       </div>
       
-      <!-- Content -->
+      <!-- محتوى الشعار واسم الكافيه -->
       <div class="relative z-10 flex flex-col items-center text-center px-4 pt-8">
-        <!-- Logo -->
+        <!-- الشعار الدائري -->
         <div class="w-32 h-32 rounded-full border-4 border-golden bg-black-gold flex flex-col items-center justify-center shadow-2xl mb-6 transform hover:scale-105 transition-transform">
           <h1 class="text-golden font-black text-3xl leading-none">Golden</h1>
           <p class="text-white/80 text-[10px] uppercase tracking-widest mt-1">Cafe & Restaurant</p>
@@ -70,10 +72,10 @@
       </div>
     </section>
 
-    <!-- Categories Section -->
+    <!-- قسم تصنيفات الطعام والمشروبات (Categories) -->
     <section class="relative -mt-8 z-20 px-4">
       <div class="flex gap-4 overflow-x-auto no-scrollbar py-4 px-1">
-        <!-- All -->
+        <!-- تصنيف الكل -->
         <button data-category="all" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-golden rounded-2xl flex flex-col items-center justify-center shadow-xl transition-all hover:scale-105 active:scale-95 group text-white">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="layout-grid" class="w-8 h-8"></i>
@@ -82,7 +84,7 @@
           <div class="indicator w-8 h-1 bg-white rounded-full mt-1"></div>
         </button>
 
-        <!-- Juices -->
+        <!-- عصير فريش -->
         <button data-category="juices" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="citrus" class="w-8 h-8"></i>
@@ -91,7 +93,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Shakes -->
+        <!-- ميلك شيك -->
         <button data-category="shakes" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="cup-soda" class="w-8 h-8"></i>
@@ -100,7 +102,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Mojito -->
+        <!-- موهيتو -->
         <button data-category="mojito" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="glass-water" class="w-8 h-8"></i>
@@ -109,7 +111,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Hot Drinks -->
+        <!-- مشروبات ساخنة -->
         <button data-category="coffee" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="coffee" class="w-8 h-8"></i>
@@ -118,7 +120,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Iced Coffee -->
+        <!-- قهوة مثلجة -->
         <button data-category="iced-coffee" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="snowflake" class="w-8 h-8"></i>
@@ -127,7 +129,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Soft Drinks -->
+        <!-- مشروبات غازية -->
         <button data-category="soft-drinks" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="archive" class="w-8 h-8"></i>
@@ -136,7 +138,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Pizza -->
+        <!-- بيتزا -->
         <button data-category="food" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="pizza" class="w-8 h-8"></i>
@@ -145,7 +147,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Fries -->
+        <!-- فرايز -->
         <button data-category="fries" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="utensils" class="w-8 h-8"></i>
@@ -154,7 +156,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Extras -->
+        <!-- إضافات -->
         <button data-category="extras" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="plus-circle" class="w-8 h-8"></i>
@@ -163,7 +165,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Calzone -->
+        <!-- كلزوني -->
         <button data-category="calzone" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="pocket" class="w-8 h-8"></i>
@@ -172,7 +174,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Ice Cream -->
+        <!-- آيسكريم -->
         <button data-category="ice-cream" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="ice-cream" class="w-8 h-8"></i>
@@ -181,7 +183,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Desserts -->
+        <!-- حلويات -->
         <button data-category="desserts" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="cake" class="w-8 h-8"></i>
@@ -190,7 +192,7 @@
           <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
-        <!-- Shisha -->
+        <!-- شيشة -->
         <button data-category="shisha" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
           <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
             <i data-lucide="wind" class="w-8 h-8"></i>
@@ -201,7 +203,7 @@
       </div>
     </section>
 
-    <!-- Search Overlay -->
+    <!-- النافذة المنبثقة للبحث (Search Overlay) -->
     <div id="search-overlay" class="fixed inset-0 z-[110] bg-black-gold/95 backdrop-blur-md flex flex-col items-center justify-start pt-24 px-6 opacity-0 pointer-events-none transition-all duration-300">
       <button id="close-search" class="absolute top-6 right-6 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-colors">
         <i data-lucide="x" class="w-8 h-8"></i>
@@ -216,39 +218,39 @@
       </div>
     </div>
 
-    <!-- Menu Grid -->
+    <!-- شبكة عرض المنتجات (Menu Grid) -->
     <main class="p-4 pb-12">
       <div id="menu-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <!-- Cards injected by JS -->
+        <!-- يتم حقن البطاقات بواسطة JavaScript -->
       </div>
     </main>
 
-    <!-- Product Details Modal -->
+    <!-- نافذة تفاصيل المنتج (Product Details Modal) -->
     <div id="product-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
       <div class="absolute inset-0 bg-black/60 backdrop-blur-sm modal-close-trigger cursor-pointer"></div>
       
       <div class="relative w-full max-w-lg bg-[#FDFCF0] rounded-[40px] overflow-hidden shadow-2xl transform scale-90 transition-transform duration-300 border-4 border-golden/10">
-        <!-- Top Close Button (X) -->
+        <!-- زر الإغلاق العلوي -->
         <button class="absolute top-6 right-6 z-10 w-10 h-10 bg-black/40 text-white rounded-full flex items-center justify-center backdrop-blur-md hover:bg-black/60 transition-colors modal-close-trigger">
           <i data-lucide="x" class="w-6 h-6"></i>
         </button>
 
-        <!-- Product Image -->
+        <!-- صورة المنتج -->
         <div class="h-64 sm:h-80 w-full relative">
           <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
         </div>
 
-        <!-- Content -->
+        <!-- محتوى تفاصيل المنتج -->
         <div class="p-8 text-center">
           <h2 id="modal-title" class="text-black-gold text-3xl font-extrabold mb-3 line-clamp-1"></h2>
           <p id="modal-description" class="text-gray-600 text-lg mb-8 leading-relaxed px-4"></p>
 
-          <!-- Prices Section -->
+          <!-- حاوية الأسعار والأحجام -->
           <div id="modal-prices-container" class="bg-golden/5 rounded-[32px] p-4 sm:p-6 space-y-3 mb-8 max-h-[300px] overflow-y-auto no-scrollbar">
-            <!-- Prices will be injected here -->
+            <!-- يتم حقن الأسعار هنا -->
           </div>
 
-          <!-- Close Button (Wide) -->
+          <!-- زر الإغلاق السفلي -->
           <button class="w-full bg-golden text-white py-5 rounded-[24px] text-xl font-bold hover:bg-golden-dark transition-colors shadow-lg shadow-golden/20 modal-close-trigger mb-2">
             إغلاق
           </button>
@@ -256,8 +258,9 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- تذييل الصفحة (Footer) -->
     <footer class="pb-12 pt-12 text-center bg-black-gold text-white mt-12 relative overflow-hidden">
+      <!-- خط التدرج العلوي -->
       <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-golden to-transparent"></div>
       <div class="relative z-10">
         <div class="mb-4">
