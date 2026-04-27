@@ -175,6 +175,24 @@ function init() {
   const menuGrid = document.getElementById('menu-grid');
   if (!menuGrid) return; // تأكد من وجود حاوية المنيو قبل البدء
 
+  // --- منطق الصفحة الترحيبية (Welcome Screen Logic) ---
+  const welcomeScreen = document.getElementById('welcome-screen');
+  const exploreBtn = document.getElementById('explore-btn');
+
+  if (welcomeScreen && exploreBtn) {
+    document.body.style.overflow = 'hidden'; // منع السكرول عند وجود صفحة الترحيب
+    
+    exploreBtn.addEventListener('click', () => {
+      welcomeScreen.classList.add('opacity-0', 'pointer-events-none', 'scale-110');
+      document.body.style.overflow = ''; // إعادة السكرول
+      
+      // إزالة العنصر تماماً من DOM بعد انتهاء الحركة (اختياري)
+      setTimeout(() => {
+        welcomeScreen.style.display = 'none';
+      }, 700);
+    });
+  }
+
   // --- منطق البحث (Search Logic) ---
   const searchBtn = document.getElementById('search-btn');
   const searchOverlay = document.getElementById('search-overlay');

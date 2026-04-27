@@ -28,9 +28,41 @@
       /* Hide scrollbar */
       .no-scrollbar::-webkit-scrollbar { display: none; }
       .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      @keyframes welcome-zoom {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .animate-welcome {
+        animation: welcome-zoom 1s ease-out forwards;
+      }
     </style>
   </head>
   <body class="min-h-screen text-gray-900 overflow-x-hidden">
+    <!-- صفحة ترحيبية جذابة (Welcome Screen) -->
+    <div id="welcome-screen" class="fixed inset-0 z-[200] bg-black-gold flex flex-col items-center justify-center p-6 text-center transition-all duration-700">
+      <!-- تأثيرات الخلفية -->
+      <div class="absolute inset-0 opacity-20">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black-gold/50 via-black-gold to-black-gold"></div>
+
+      <div class="relative z-10 flex flex-col items-center animate-welcome">
+        <!-- الشعار -->
+        <div class="w-40 h-40 rounded-full border-4 border-golden bg-black-gold flex flex-col items-center justify-center shadow-[0_0_50px_rgba(212,175,55,0.3)] mb-8">
+          <h1 class="text-golden font-black text-4xl leading-none">Golden</h1>
+          <p class="text-white/80 text-xs uppercase tracking-widest mt-1">Cafe</p>
+        </div>
+
+        <h2 class="text-white text-4xl font-black mb-4 drop-shadow-lg" data-ar="أهلاً بك في كافيه قولدن" data-en="Welcome to Golden Cafe">أهلاً بك في كافيه قولدن</h2>
+        <p class="text-white/70 text-lg mb-12 max-w-md leading-relaxed" data-ar="نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة." data-en="We are here to delight you with the best tastes and finest services. Enjoy a unique experience in every sip.">نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة.</p>
+
+        <button id="explore-btn" class="group relative bg-golden text-white px-10 py-5 rounded-[32px] text-xl font-bold hover:bg-golden-dark transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)] active:scale-95 flex items-center gap-3">
+          <span data-ar="استكشف المنيو" data-en="Explore Menu">استكشف المنيو</span>
+          <i data-lucide="arrow-right" class="w-6 h-6 transition-transform group-hover:translate-x-2 rtl:group-hover:-translate-x-2"></i>
+        </button>
+      </div>
+    </div>
+
     <!-- عناصر التحكم في رأس الصفحة (Header) -->
     <header class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 pointer-events-none">
       <!-- زر الانستقرام -->
@@ -251,7 +283,7 @@
           </div>
 
           <!-- زر الإغلاق السفلي -->
-          <button class="w-full bg-golden text-white py-5 rounded-[24px] text-xl font-bold hover:bg-golden-dark transition-colors shadow-lg shadow-golden/20 modal-close-trigger mb-2">
+          <button class="w-full bg-golden text-white py-5 rounded-[24px] text-xl font-bold hover:bg-golden-dark transition-colors shadow-lg shadow-golden/20 modal-close-trigger mb-2" data-ar="إغلاق" data-en="Close">
             إغلاق
           </button>
         </div>
