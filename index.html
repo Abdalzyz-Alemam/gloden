@@ -39,31 +39,35 @@
   </head>
   <body class="min-h-screen text-gray-900 overflow-x-hidden">
     <!-- صفحة ترحيبية جذابة (Welcome Screen) -->
-    <div id="welcome-screen" class="fixed inset-0 z-[200] bg-black-gold flex flex-col items-center justify-center p-6 text-center transition-all duration-700">
-      <!-- تأثيرات الخلفية -->
-      <div class="absolute inset-0 opacity-30">
-        <img id="welcome-bg" src="" class="w-full h-full object-cover">
+    <div id="welcome-screen" class="fixed inset-0 z-[200] bg-[#1a1608] flex flex-col items-center justify-center p-6 text-center transition-all duration-700">
+      <!-- تأثيرات الخلفية الحية -->
+      <div class="absolute inset-0 opacity-40">
+        <img id="welcome-bg" src="" class="w-full h-full object-cover grayscale-[20%]">
       </div>
-      <div class="absolute inset-0 bg-gradient-to-tr from-black-gold via-black-gold/95 to-black-gold/60"></div>
+      <!-- تدرج لوني أفتح وأكثر حيوية -->
+      <div class="absolute inset-0 bg-gradient-to-tr from-[#1a1608] via-[#2d2510]/80 to-[#4d411a]/40"></div>
       
-      <!-- عناصر ضوئية زخرفية -->
-      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-golden/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-golden/5 rounded-full blur-[100px] pointer-events-none"></div>
+      <!-- زوايا زخرفية (Corner Lines) -->
+      <div class="absolute top-10 left-10 w-12 h-12 border-t-2 border-l-2 border-golden/40 pointer-events-none"></div>
+      <div class="absolute top-10 right-10 w-12 h-12 border-t-2 border-r-2 border-golden/40 pointer-events-none"></div>
+      <div class="absolute bottom-10 left-10 w-12 h-12 border-b-2 border-l-2 border-golden/40 pointer-events-none"></div>
+      <div class="absolute bottom-10 right-10 w-12 h-12 border-b-2 border-r-2 border-golden/40 pointer-events-none"></div>
+
+      <!-- عناصر ضوئية حيوية -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-golden/5 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div class="relative z-10 flex flex-col items-center animate-welcome max-w-sm">
         <!-- الشعار المطور -->
-        <div class="w-32 h-32 rounded-full border-[1.5px] border-golden/30 bg-black-gold/50 backdrop-blur-xl flex flex-col items-center justify-center shadow-[0_0_50px_rgba(212,175,55,0.1)] mb-10 overflow-hidden relative group">
-          <div class="absolute inset-0 bg-gradient-to-br from-golden/20 to-transparent opacity-40"></div>
-          <h1 class="text-golden font-black text-3xl leading-none relative z-10 tracking-tight">Golden</h1>
-          <p class="text-white/60 text-[9px] uppercase tracking-[0.3em] mt-2 relative z-10 font-bold">Cafe</p>
+        <div class="w-28 h-28 rounded-full border border-golden/30 bg-white/5 backdrop-blur-2xl flex flex-col items-center justify-center shadow-[0_0_50px_rgba(212,175,55,0.15)] mb-10 relative group">
+          <h1 class="text-golden font-black text-2xl leading-none relative z-10 tracking-tight">Golden</h1>
+          <p class="text-white/60 text-[8px] uppercase tracking-[0.3em] mt-1 relative z-10 font-bold">Cafe</p>
         </div>
 
         <h2 class="text-white text-3xl font-extrabold mb-4 tracking-tight leading-tight" data-ar="أهلاً بك في كافيه قولدن" data-en="Experience Golden">أهلاً بك في كافيه قولدن</h2>
-        <p class="text-white/60 text-[15px] mb-12 leading-relaxed font-medium" data-ar="نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة." data-en="Indulge in a world of exquisite flavors and premium coffee. Every sip is a story.">نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة.</p>
+        <p class="text-white/60 text-sm mb-12 leading-relaxed font-medium px-4" data-ar="نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة." data-en="Indulge in a world of exquisite flavors and premium coffee. Every sip is a story.">نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة.</p>
 
-        <button id="explore-btn" class="group relative px-8 py-3 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95 border border-golden/50 bg-black-gold/40 backdrop-blur-md">
-          <!-- تأثير لمعان خفيف عند التحويم -->
-          <div class="absolute inset-0 bg-golden opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+        <button id="explore-btn" class="group relative px-8 py-3 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95 border border-golden/50 bg-golden/10 backdrop-blur-md">
+          <div class="absolute inset-0 bg-golden opacity-5 group-hover:opacity-20 transition-opacity duration-500"></div>
           
           <div class="relative z-10 flex items-center gap-2 text-golden font-bold text-sm tracking-wide">
             <span data-ar="استكشف المنيو" data-en="Explore Menu">استكشف المنيو</span>
@@ -314,7 +318,7 @@
         </p>
         <p class="text-gray-500 text-[10px]">
           <span data-ar="تم التطوير بواسطة" data-en="Developed by">تم التطوير بواسطة</span> 
-          <a href="https://menutop.vercel.app" target="_blank" class="text-golden font-bold hover:underline" data-ar="منيو توب" data-en="Menu Top">منيو توب</a>
+          <a href="https://menutop.vercel.app" target="_blank" class="text-golden font-bold hover:underline" data-ar="عبد العزيز الامام" data-en="Abdulaziz Al-Imam">عبد العزيز الامام</a>
         </p>
       </div>
     </footer>
