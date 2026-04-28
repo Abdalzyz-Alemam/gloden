@@ -1,35 +1,36 @@
 
 // استيراد ملف التنسيق الأساسي (Tailwind CSS)
 import './index.css';
+import { IMAGES } from './images.js';
 
 // قائمة أصناف المنيو - تحتوي على كافة البيانات (الاسم، السعر، التصنيف، الصورة، والوصف)
 const menuItems = [
   // --- المشروبات (Drinks) ---
   
   // العصائر الطبيعية (Fresh Juices)
-  { id: 1, title: 'عصير قولدن', price: '13,000', category: 'juices', image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&q=80&w=400' },
-  { id: 2, title: 'ليمون بالنعناع', price: '7,000', category: 'juices', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
-  { id: 3, title: 'ليمون بالحليب', price: '9,000', category: 'juices', image: 'https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=400' },
-  { id: 4, title: 'عصير فراولة', price: '9,000', category: 'juices', image: 'https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=400' },
-  { id: 5, title: 'فراولة بالحليب', price: '10,000', category: 'juices', image: 'https://images.unsplash.com/photo-1544145945-f904253db0ad?auto=format&fit=crop&q=80&w=400' },
-  { id: 6, title: 'عصير منقة', price: '9,000', category: 'juices', image: 'https://images.unsplash.com/photo-1553334812-3693fb0a986c?auto=format&fit=crop&q=80&w=400' },
-  { id: 7, title: 'منقة بالحليب', price: '10,000', category: 'juices', image: 'https://images.unsplash.com/photo-1553334812-3693fb0a986c?auto=format&fit=crop&q=80&w=400' },
-  { id: 8, title: 'عصير برتقال', price: '7,000', category: 'juices', image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&q=80&w=400' },
-  { id: 9, title: 'عصير أناناس', price: '7,000', category: 'juices', image: 'https://images.unsplash.com/photo-1550506393-5cf4032d8478?auto=format&fit=crop&q=80&w=400' },
-  { id: 10, title: 'عصير قريب فروت', price: '7,000', category: 'juices', image: 'https://images.unsplash.com/photo-1550506393-5cf4032d8478?auto=format&fit=crop&q=80&w=400' },
-  { id: 11, title: 'كوكتيل مشكل', price: '11,000', category: 'juices', image: 'https://images.unsplash.com/photo-1510626176961-4b57d4fbadff?auto=format&fit=crop&q=80&w=400' },
-  { id: 12, title: 'موز بالحليب', price: '9,000', category: 'juices', image: 'https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&q=80&w=400' },
+  { id: 1, title: 'عصير قولدن', price: '13,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 2, title: 'ليمون بالنعناع', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 3, title: 'ليمون بالحليب', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 4, title: 'عصير فراولة', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 5, title: 'فراولة بالحليب', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 6, title: 'عصير منقة', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 7, title: 'منقة بالحليب', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 8, title: 'عصير برتقال', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 9, title: 'عصير أناناس', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 10, title: 'عصير قريب فروت', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 11, title: 'كوكتيل مشكل', price: '11,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 12, title: 'موز بالحليب', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
 
   // Milk Shakes (Image 1)
-  { id: 13, title: 'قولدن شيك الفاخر', price: '21,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=400' },
-  { id: 14, title: 'فانيليا ملك شيك', price: '12,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=400' },
-  { id: 15, title: 'شوكولاته ملك شيك', price: '14,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=400' },
-  { id: 16, title: 'أوريو ملك شيك', price: '12,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=400' },
-  { id: 17, title: 'كت كات شيك', price: '15,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1553787434-45e1d245bfbb?auto=format&fit=crop&q=80&w=400' },
-  { id: 18, title: 'إسنيكرز شيك', price: '16,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1590137876181-2a5a7e34030d?auto=format&fit=crop&q=80&w=400' },
-  { id: 19, title: 'باونتي شيك', price: '16,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1553787434-45e1d245bfbb?auto=format&fit=crop&q=80&w=400' },
-  { id: 20, title: 'تويكس شيك', price: '16,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1553787434-45e1d245bfbb?auto=format&fit=crop&q=80&w=400' },
-  { id: 21, title: 'شوكولاتة دبي شيك', price: '15,000', category: 'shakes', image: 'https://images.unsplash.com/photo-1563805042-7684c849a135?auto=format&fit=crop&q=80&w=400' },
+  { id: 13, title: 'قولدن شيك الفاخر', price: '21,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 14, title: 'فانيليا ملك شيك', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 15, title: 'شوكولاته ملك شيك', price: '14,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 16, title: 'أوريو ملك شيك', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 17, title: 'كت كات شيك', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 18, title: 'إسنيكرز شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 19, title: 'باونتي شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 20, title: 'تويكس شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 21, title: 'شوكولاتة دبي شيك', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
 
   // Hot Drinks (Image 2 & Prompt)
   { id: 22, title: 'قهوة تركية / سودانية', price: '6,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'قهوة سودانية/تركية أصلية محضرة بعناية' },
@@ -171,6 +172,12 @@ const menuItems = [
 
 // دالة تهيئة الواجهة عند تحميل الصفحة
 function init() {
+  // ضبط صور الخلفيات من ملف الإعدادات
+  const welcomeBg = document.getElementById('welcome-bg');
+  const heroBg = document.getElementById('hero-bg');
+  if (welcomeBg) welcomeBg.src = IMAGES.WELCOME_BG;
+  if (heroBg) heroBg.src = IMAGES.HERO_BG;
+
   const categoryButtons = document.querySelectorAll('.category-btn');
   const menuGrid = document.getElementById('menu-grid');
   if (!menuGrid) return; // تأكد من وجود حاوية المنيو قبل البدء

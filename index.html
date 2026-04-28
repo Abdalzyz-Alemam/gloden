@@ -41,24 +41,34 @@
     <!-- صفحة ترحيبية جذابة (Welcome Screen) -->
     <div id="welcome-screen" class="fixed inset-0 z-[200] bg-black-gold flex flex-col items-center justify-center p-6 text-center transition-all duration-700">
       <!-- تأثيرات الخلفية -->
-      <div class="absolute inset-0 opacity-20">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+      <div class="absolute inset-0 opacity-30">
+        <img id="welcome-bg" src="" class="w-full h-full object-cover">
       </div>
-      <div class="absolute inset-0 bg-gradient-to-b from-black-gold/50 via-black-gold to-black-gold"></div>
+      <div class="absolute inset-0 bg-gradient-to-tr from-black-gold via-black-gold/95 to-black-gold/60"></div>
+      
+      <!-- عناصر ضوئية زخرفية -->
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-golden/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-golden/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-      <div class="relative z-10 flex flex-col items-center animate-welcome">
-        <!-- الشعار -->
-        <div class="w-40 h-40 rounded-full border-4 border-golden bg-black-gold flex flex-col items-center justify-center shadow-[0_0_50px_rgba(212,175,55,0.3)] mb-8">
-          <h1 class="text-golden font-black text-4xl leading-none">Golden</h1>
-          <p class="text-white/80 text-xs uppercase tracking-widest mt-1">Cafe</p>
+      <div class="relative z-10 flex flex-col items-center animate-welcome max-w-sm">
+        <!-- الشعار المطور -->
+        <div class="w-32 h-32 rounded-full border-[1.5px] border-golden/30 bg-black-gold/50 backdrop-blur-xl flex flex-col items-center justify-center shadow-[0_0_50px_rgba(212,175,55,0.1)] mb-10 overflow-hidden relative group">
+          <div class="absolute inset-0 bg-gradient-to-br from-golden/20 to-transparent opacity-40"></div>
+          <h1 class="text-golden font-black text-3xl leading-none relative z-10 tracking-tight">Golden</h1>
+          <p class="text-white/60 text-[9px] uppercase tracking-[0.3em] mt-2 relative z-10 font-bold">Cafe</p>
         </div>
 
-        <h2 class="text-white text-4xl font-black mb-4 drop-shadow-lg" data-ar="أهلاً بك في كافيه قولدن" data-en="Welcome to Golden Cafe">أهلاً بك في كافيه قولدن</h2>
-        <p class="text-white/70 text-lg mb-12 max-w-md leading-relaxed" data-ar="نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة." data-en="We are here to delight you with the best tastes and finest services. Enjoy a unique experience in every sip.">نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة.</p>
+        <h2 class="text-white text-3xl font-extrabold mb-4 tracking-tight leading-tight" data-ar="أهلاً بك في كافيه قولدن" data-en="Experience Golden">أهلاً بك في كافيه قولدن</h2>
+        <p class="text-white/60 text-[15px] mb-12 leading-relaxed font-medium" data-ar="نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة." data-en="Indulge in a world of exquisite flavors and premium coffee. Every sip is a story.">نحن هنا لنسعدك بأفضل المذاقات وأرقى الخدمات. استمتع بتجربة فريدة في كل رشفة.</p>
 
-        <button id="explore-btn" class="group relative bg-golden text-white px-10 py-5 rounded-[32px] text-xl font-bold hover:bg-golden-dark transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)] active:scale-95 flex items-center gap-3">
-          <span data-ar="استكشف المنيو" data-en="Explore Menu">استكشف المنيو</span>
-          <i data-lucide="arrow-right" class="w-6 h-6 transition-transform group-hover:translate-x-2 rtl:group-hover:-translate-x-2"></i>
+        <button id="explore-btn" class="group relative px-8 py-3 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95 border border-golden/50 bg-black-gold/40 backdrop-blur-md">
+          <!-- تأثير لمعان خفيف عند التحويم -->
+          <div class="absolute inset-0 bg-golden opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+          
+          <div class="relative z-10 flex items-center gap-2 text-golden font-bold text-sm tracking-wide">
+            <span data-ar="استكشف المنيو" data-en="Explore Menu">استكشف المنيو</span>
+            <i data-lucide="chevron-left" class="w-4 h-4 transition-transform group-hover:-translate-x-1 rtl:group-hover:translate-x-1"></i>
+          </div>
         </button>
       </div>
     </div>
@@ -86,7 +96,7 @@
     <section class="relative h-[45vh] w-full flex flex-col items-center justify-center overflow-hidden">
       <!-- خلفية الصورة مع تأثير التعتيم -->
       <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1200" alt="Cafe Background" class="w-full h-full object-cover">
+        <img id="hero-bg" src="" alt="Cafe Background" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
       </div>
       
@@ -108,129 +118,129 @@
     <section class="relative -mt-8 z-20 px-4">
       <div class="flex gap-4 overflow-x-auto no-scrollbar py-4 px-1">
         <!-- تصنيف الكل -->
-        <button data-category="all" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-golden rounded-2xl flex flex-col items-center justify-center shadow-xl transition-all hover:scale-105 active:scale-95 group text-white">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="layout-grid" class="w-8 h-8"></i>
+        <button data-category="all" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-golden rounded-2xl flex flex-col items-center justify-center shadow-lg md:shadow-xl transition-all hover:scale-105 active:scale-95 group text-white">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="layout-grid" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="الكل" data-en="All">الكل</span>
-          <div class="indicator w-8 h-1 bg-white rounded-full mt-1"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="الكل" data-en="All">الكل</span>
+          <div class="indicator w-6 h-1 bg-white rounded-full mt-1"></div>
         </button>
 
         <!-- عصير فريش -->
-        <button data-category="juices" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="citrus" class="w-8 h-8"></i>
+        <button data-category="juices" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="citrus" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="عصائر فريش" data-en="Fresh Juices">عصائر فريش</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="عصائر فريش" data-en="Fresh Juices">عصائر فريش</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- ميلك شيك -->
-        <button data-category="shakes" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="cup-soda" class="w-8 h-8"></i>
+        <button data-category="shakes" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="cup-soda" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="ميلك شيك" data-en="Milk Shakes">ميلك شيك</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="ميلك شيك" data-en="Milk Shakes">ميلك شيك</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- موهيتو -->
-        <button data-category="mojito" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="glass-water" class="w-8 h-8"></i>
+        <button data-category="mojito" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="glass-water" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="موهيتو" data-en="Mojito">موهيتو</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="موهيتو" data-en="Mojito">موهيتو</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- مشروبات ساخنة -->
-        <button data-category="coffee" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="coffee" class="w-8 h-8"></i>
+        <button data-category="coffee" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="coffee" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="مشروبات ساخنة" data-en="Hot Drinks">مشروبات ساخنة</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="مشروبات ساخنة" data-en="Hot Drinks">مشروبات ساخنة</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- قهوة مثلجة -->
-        <button data-category="iced-coffee" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="snowflake" class="w-8 h-8"></i>
+        <button data-category="iced-coffee" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="snowflake" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="قهوة مثلجة" data-en="Iced Coffee">قهوة مثلجة</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="قهوة مثلجة" data-en="Iced Coffee">قهوة مثلجة</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- مشروبات غازية -->
-        <button data-category="soft-drinks" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="archive" class="w-8 h-8"></i>
+        <button data-category="soft-drinks" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="archive" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="غازيه" data-en="Soft Drinks">غازيه</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="غازيه" data-en="Soft Drinks">غازيه</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- بيتزا -->
-        <button data-category="food" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="pizza" class="w-8 h-8"></i>
+        <button data-category="food" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="pizza" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="بيتزا" data-en="Pizza">بيتزا</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="بيتزا" data-en="Pizza">بيتزا</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- فرايز -->
-        <button data-category="fries" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="utensils" class="w-8 h-8"></i>
+        <button data-category="fries" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="utensils" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="فرايز" data-en="Fries">فرايز</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="فرايز" data-en="Fries">فرايز</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- إضافات -->
-        <button data-category="extras" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="plus-circle" class="w-8 h-8"></i>
+        <button data-category="extras" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="plus-circle" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="إضافات" data-en="Extras">إضافات</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="إضافات" data-en="Extras">إضافات</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- كلزوني -->
-        <button data-category="calzone" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="pocket" class="w-8 h-8"></i>
+        <button data-category="calzone" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="pocket" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="كلزوني" data-en="Calzone">كلزوني</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="كلزوني" data-en="Calzone">كلزوني</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- آيسكريم -->
-        <button data-category="ice-cream" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="ice-cream" class="w-8 h-8"></i>
+        <button data-category="ice-cream" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="ice-cream" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold whitespace-nowrap" data-ar="آيسكريم" data-en="Ice Cream">آيسكريم</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold whitespace-nowrap" data-ar="آيسكريم" data-en="Ice Cream">آيسكريم</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- حلويات -->
-        <button data-category="desserts" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="cake" class="w-8 h-8"></i>
+        <button data-category="desserts" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="cake" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="حلويات" data-en="Desserts">حلويات</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="حلويات" data-en="Desserts">حلويات</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
 
         <!-- شيشة -->
-        <button data-category="shisha" class="category-btn flex-shrink-0 min-w-[90px] h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
-          <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-1">
-            <i data-lucide="wind" class="w-8 h-8"></i>
+        <button data-category="shisha" class="category-btn flex-shrink-0 min-w-[72px] h-[90px] md:min-w-[90px] md:h-[110px] bg-white rounded-2xl flex flex-col items-center justify-center shadow-md md:shadow-lg transition-all hover:scale-105 active:scale-95 group text-gray-500">
+          <div class="w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center mb-1">
+            <i data-lucide="wind" class="w-5 h-5 md:w-8 md:h-8"></i>
           </div>
-          <span class="font-bold" data-ar="شيشة" data-en="Shisha">شيشة</span>
-          <div class="indicator w-8 h-1 bg-golden rounded-full mt-1 hidden"></div>
+          <span class="text-[10px] md:text-sm font-bold" data-ar="شيشة" data-en="Shisha">شيشة</span>
+          <div class="indicator w-6 h-1 bg-golden rounded-full mt-1 hidden"></div>
         </button>
       </div>
     </section>
