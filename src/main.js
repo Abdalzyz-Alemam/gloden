@@ -8,165 +8,165 @@ const menuItems = [
   // --- المشروبات (Drinks) ---
   
   // العصائر الطبيعية (Fresh Juices)
-  { id: 1, title: 'عصير قولدن', price: '13,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 2, title: 'ليمون بالنعناع', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 3, title: 'ليمون بالحليب', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 4, title: 'عصير فراولة', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 5, title: 'فراولة بالحليب', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 6, title: 'عصير منقة', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 7, title: 'منقة بالحليب', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 8, title: 'عصير برتقال', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 9, title: 'عصير أناناس', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 10, title: 'عصير قريب فروت', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 11, title: 'كوكتيل مشكل', price: '11,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
-  { id: 12, title: 'موز بالحليب', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 1, title: 'عصير قولدن', title_en: 'Golden Juice', price: '13,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 2, title: 'ليمون بالنعناع', title_en: 'Lemon Mint', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 3, title: 'ليمون بالحليب', title_en: 'Lemon Milk', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 4, title: 'عصير فراولة', title_en: 'Strawberry Juice', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 5, title: 'فراولة بالحليب', title_en: 'Strawberry Milk', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 6, title: 'عصير منقة', title_en: 'Mango Juice', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 7, title: 'منقة بالحليب', title_en: 'Mango Milk', price: '10,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 8, title: 'عصير برتقال', title_en: 'Orange Juice', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 9, title: 'عصير أناناس', title_en: 'Pineapple Juice', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 10, title: 'عصير قريب فروت', title_en: 'Grapefruit Juice', price: '7,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 11, title: 'كوكتيل مشكل', title_en: 'Mixed Cocktail', price: '11,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
+  { id: 12, title: 'موز بالحليب', title_en: 'Banana Milk', price: '9,000', category: 'juices', image: IMAGES.CATEGORIES.JUICES },
 
   // Milk Shakes (Image 1)
-  { id: 13, title: 'قولدن شيك الفاخر', price: '21,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 14, title: 'فانيليا ملك شيك', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 15, title: 'شوكولاته ملك شيك', price: '14,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 16, title: 'أوريو ملك شيك', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 17, title: 'كت كات شيك', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 18, title: 'إسنيكرز شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 19, title: 'باونتي شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 20, title: 'تويكس شيك', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
-  { id: 21, title: 'شوكولاتة دبي شيك', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 13, title: 'قولدن شيك الفاخر', title_en: 'Golden Luxury Shake', price: '21,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 14, title: 'فانيليا ملك شيك', title_en: 'Vanilla Milkshake', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 15, title: 'شوكولاته ملك شيك', title_en: 'Chocolate Milkshake', price: '14,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 16, title: 'أوريو ملك شيك', title_en: 'Oreo Milkshake', price: '12,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 17, title: 'كت كات شيك', title_en: 'KitKat Shake', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 18, title: 'إسنيكرز شيك', title_en: 'Snickers Shake', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 19, title: 'باونتي شيك', title_en: 'Bounty Shake', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 20, title: 'تويكس شيك', title_en: 'Twix Shake', price: '16,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
+  { id: 21, title: 'شوكولاتة دبي شيك', title_en: 'Dubai Chocolate Shake', price: '15,000', category: 'shakes', image: IMAGES.CATEGORIES.SHAKES },
 
   // Hot Drinks (Image 2 & Prompt)
-  { id: 22, title: 'قهوة تركية / سودانية', price: '6,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'قهوة سودانية/تركية أصلية محضرة بعناية' },
-  { id: 23, title: 'نسكافيه / كابتشينو', price: '9,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1572442388796-11668a67e13a?auto=format&fit=crop&q=80&w=400', description: 'مزيج القهوة الكريمي الساخن' },
-  { id: 24, title: 'أوفلتين ساخن', price: '8,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'مشروب الأوفلتين الشتوي الدافئ' },
-  { id: 25, title: 'هوت شوكلت', price: '8,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'شوكولاتة ساخنة غنية بالحليب' },
-  { id: 26, title: 'جبنة (كبير)', price: '33,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم كبير)' },
-  { id: 27, title: 'جبنة (وسط)', price: '28,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم وسط)' },
-  { id: 28, title: 'جبنة (صغير)', price: '16,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم صغير)' },
-  { id: 28.1, title: 'قولدن (كبير)', price: '55,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم كبير)' },
-  { id: 28.2, title: 'قولدن (وسط)', price: '40,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم وسط)' },
-  { id: 28.3, title: 'قولدن (صغير)', price: '24,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم صغير)' },
-  { id: 29, title: 'فرنسي / كافيه لاتيه', price: '7,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1541167760496-162955ed8521?auto=format&fit=crop&q=80&w=400', description: 'قهوة فرنسية ناعمة' },
+  { id: 22, title: 'قهوة تركية / سودانية', title_en: 'Turkish / Sudanese Coffee', price: '6,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'قهوة سودانية/تركية أصلية محضرة بعناية', description_en: 'Authentic Sudanese/Turkish coffee prepared with care' },
+  { id: 23, title: 'نسكافيه / كابتشينو', title_en: 'Nescafe / Cappuccino', price: '9,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1572442388796-11668a67e13a?auto=format&fit=crop&q=80&w=400', description: 'مزيج القهوة الكريمي الساخن', description_en: 'Creamy hot coffee blend' },
+  { id: 24, title: 'أوفلتين ساخن', title_en: 'Hot Ovaltine', price: '8,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'مشروب الأوفلتين الشتوي الدافئ', description_en: 'Warm winter Ovaltine drink' },
+  { id: 25, title: 'هوت شوكلت', title_en: 'Hot Chocolate', price: '8,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1544787210-2211dca21614?auto=format&fit=crop&q=80&w=400', description: 'شوكولاتة ساخنة غنية بالحليب', description_en: 'Rich hot chocolate with milk' },
+  { id: 26, title: 'جبنة (كبير)', title_en: 'Jabana (Large)', price: '33,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم كبير)', description_en: 'Traditional Sudanese coffee (Large size)' },
+  { id: 27, title: 'جبنة (وسط)', title_en: 'Jabana (Medium)', price: '28,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم وسط)', description_en: 'Traditional Sudanese coffee (Medium size)' },
+  { id: 28, title: 'جبنة (صغير)', title_en: 'Jabana (Small)', price: '16,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة سودانية تقليدية (حجم صغير)', description_en: 'Traditional Sudanese coffee (Small size)' },
+  { id: 28.1, title: 'قولدن (كبير)', title_en: 'Golden Coffee (Large)', price: '55,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم كبير)', description_en: 'Premium Golden coffee (Large size)' },
+  { id: 28.2, title: 'قولدن (وسط)', title_en: 'Golden Coffee (Medium)', price: '40,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم وسط)', description_en: 'Premium Golden coffee (Medium size)' },
+  { id: 28.3, title: 'قولدن (صغير)', title_en: 'Golden Coffee (Small)', price: '24,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b18?auto=format&fit=crop&q=80&w=400', description: 'جبنة قولدن الفاخرة (حجم صغير)', description_en: 'Premium Golden coffee (Small size)' },
+  { id: 29, title: 'فرنسي / كافيه لاتيه', title_en: 'French / Cafe Latte', price: '7,000', category: 'coffee', image: 'https://images.unsplash.com/photo-1541167760496-162955ed8521?auto=format&fit=crop&q=80&w=400', description: 'قهوة فرنسية ناعمة', description_en: 'Smooth French coffee' },
 
   // Mojito (Image 2)
-  { id: 30, title: 'موهيتو قولدن الفاخر', price: '15,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
-  { id: 31, title: 'موهيتو باشون فروت', price: '10,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
-  { id: 32, title: 'موهيتو طاقة / بلو ميكس', price: '13,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&q=80&w=400' },
-  { id: 33, title: 'موهيتو توت / فراولة', price: '10,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
+  { id: 30, title: 'موهيتو قولدن الفاخر', title_en: 'Premium Golden Mojito', price: '15,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
+  { id: 31, title: 'موهيتو باشون فروت', title_en: 'Passion Fruit Mojito', price: '10,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
+  { id: 32, title: 'موهيتو طاقة / بلو ميكس', title_en: 'Energy Mojito / Blue Mix', price: '13,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&q=80&w=400' },
+  { id: 33, title: 'موهيتو توت / فراولة', title_en: 'Berry / Strawberry Mojito', price: '10,000', category: 'mojito', image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400' },
 
   // Soft Drinks (Image 2)
-  { id: 34, title: 'بيبسي / سفن أب / كولا', price: '4,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1629203866270-f923a635776e?auto=format&fit=crop&q=80&w=400' },
-  { id: 35, title: 'ريد بول / باربيكان', price: '8,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1622543953495-473ee167c454?auto=format&fit=crop&q=80&w=400' },
-  { id: 36, title: 'مياه صحة نقية', price: '3,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf3d?auto=format&fit=crop&q=80&w=400' },
+  { id: 34, title: 'بيبسي / سفن أب / كولا', title_en: 'Pepsi / 7Up / Cola', price: '4,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1629203866270-f923a635776e?auto=format&fit=crop&q=80&w=400' },
+  { id: 35, title: 'ريد بول / باربيكان', title_en: 'Red Bull / Barbican', price: '8,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1622543953495-473ee167c454?auto=format&fit=crop&q=80&w=400' },
+  { id: 36, title: 'مياه صحة نقية', title_en: 'Pure Health Water', price: '3,000', category: 'soft-drinks', image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf3d?auto=format&fit=crop&q=80&w=400' },
 
   // Iced Coffee (Image 4)
-  { id: 37, title: 'آيس كوفي (Ice Coffee)', price: '10,000', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1461023058943-07fac214f444?auto=format&fit=crop&q=80&w=400', description: 'قهوة مثلجة منعشة محضرة من أجود أنواع البن' },
-  { id: 37.1, title: 'لاتيه (Latte)', price: '1,200', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400', description: 'لاتيه بارد كريمي وغني' },
-  { id: 38, title: 'أسبانيش لاتيه (Spanish Latte)', price: '10,000', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400', description: 'لاتيه بارد مع الحليب المكثف المحلى لإضافة طعم فريد' },
+  { id: 37, title: 'آيس كوفي (Ice Coffee)', title_en: 'Iced Coffee', price: '10,000', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1461023058943-07fac214f444?auto=format&fit=crop&q=80&w=400', description: 'قهوة مثلجة منعشة محضرة من أجود أنواع البن', description_en: 'Refreshing iced coffee made from the finest beans' },
+  { id: 37.1, title: 'لاتيه (Latte)', title_en: 'Iced Latte', price: '1,200', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400', description: 'لاتيه بارد كريمي وغني', description_en: 'Rich and creamy cold latte' },
+  { id: 38, title: 'أسبانيش لاتيه (Spanish Latte)', title_en: 'Spanish Latte', price: '10,000', category: 'iced-coffee', image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400', description: 'لاتيه بارد مع الحليب المكثف المحلى لإضافة طعم فريد', description_en: 'Cold latte with sweetened condensed milk for a unique taste' },
 
   // --- FOOD (Category: food) ---
   
   // Pizza (Updated with 3 sizes)
-  { id: 39.1, title: 'بيتزا قولدن (صغير)', price: '20,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة' },
-  { id: 39.2, title: 'بيتزا قولدن (وسط)', price: '31,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة' },
-  { id: 39.3, title: 'بيتزا قولدن (كبير)', price: '43,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة' },
+  { id: 39.1, title: 'بيتزا قولدن (صغير)', title_en: 'Golden Pizza (Small)', price: '20,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة', description_en: 'Our special Golden Pizza with secret ingredients and premium cheese' },
+  { id: 39.2, title: 'بيتزا قولدن (وسط)', title_en: 'Golden Pizza (Medium)', price: '31,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة', description_en: 'Our special Golden Pizza with secret ingredients and premium cheese' },
+  { id: 39.3, title: 'بيتزا قولدن (كبير)', title_en: 'Golden Pizza (Large)', price: '43,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا قولدن الخاصة بمكوناتنا السرية الغنية بالطعم والجبنة الفاخرة', description_en: 'Our special Golden Pizza with secret ingredients and premium cheese' },
   
-  { id: 40.1, title: 'بيتزا مارغريتا (صغير)', price: '15,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا' },
-  { id: 40.2, title: 'بيتزا مارغريتا (وسط)', price: '24,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا' },
-  { id: 40.3, title: 'بيتزا مارغريتا (كبير)', price: '35,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا' },
+  { id: 40.1, title: 'بيتزا مارغريتا (صغير)', title_en: 'Margherita Pizza (Small)', price: '15,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا', description_en: 'Classic pizza with Italian tomato sauce, basil, and mozzarella cheese' },
+  { id: 40.2, title: 'بيتزا مارغريتا (وسط)', title_en: 'Margherita Pizza (Medium)', price: '24,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا', description_en: 'Classic pizza with Italian tomato sauce, basil, and mozzarella cheese' },
+  { id: 40.3, title: 'بيتزا مارغريتا (كبير)', title_en: 'Margherita Pizza (Large)', price: '35,000', category: 'food', image: 'https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?auto=format&fit=crop&q=80&w=400', description: 'البيتزا الكلاسيكية بصلصة الطماطم الإيطالية والريحان وجبنة الموزاريلا', description_en: 'Classic pizza with Italian tomato sauce, basil, and mozzarella cheese' },
 
-  { id: 41.1, title: 'بيتزا هوت دوق (صغير)', price: '18,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة' },
-  { id: 41.2, title: 'بيتزا هوت دوق (وسط)', price: '27,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة' },
-  { id: 41.3, title: 'بيتزا هوت دوق (كبير)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة' },
+  { id: 41.1, title: 'بيتزا هوت دوق (صغير)', title_en: 'Hot Dog Pizza (Small)', price: '18,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة', description_en: 'Delicious hot dog pieces with mixed vegetables and special sauce' },
+  { id: 41.2, title: 'بيتزا هوت دوق (وسط)', title_en: 'Hot Dog Pizza (Medium)', price: '27,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة', description_en: 'Delicious hot dog pieces with mixed vegetables and special sauce' },
+  { id: 41.3, title: 'بيتزا هوت دوق (كبير)', title_en: 'Hot Dog Pizza (Large)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'قطع الهوت دوق اللذيذة مع الخضار المشكلة والصلصة المميزة', description_en: 'Delicious hot dog pieces with mixed vegetables and special sauce' },
 
-  { id: 42.1, title: 'بيتزا مفرومة (صغير)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة' },
-  { id: 42.2, title: 'بيتزا مفرومة (وسط)', price: '28,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة' },
-  { id: 42.3, title: 'بيتزا مفرومة (كبير)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة' },
+  { id: 42.1, title: 'بيتزا مفرومة (صغير)', title_en: 'Minced Meat Pizza (Small)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة', description_en: 'Fresh minced meat with special spice mix and cheese' },
+  { id: 42.2, title: 'بيتزا مفرومة (وسط)', title_en: 'Minced Meat Pizza (Medium)', price: '28,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة', description_en: 'Fresh minced meat with special spice mix and cheese' },
+  { id: 42.3, title: 'بيتزا مفرومة (كبير)', title_en: 'Minced Meat Pizza (Large)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'اللحم المفروم الطازج مع خلطة البهارات الخاصة والجبنة', description_en: 'Fresh minced meat with special spice mix and cheese' },
 
-  { id: 43.1, title: 'بيتزا خضار (صغير)', price: '17,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة' },
-  { id: 43.2, title: 'بيتزا خضار (وسط)', price: '26,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة' },
-  { id: 43.3, title: 'بيتزا خضار (كبير)', price: '37,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة' },
+  { id: 43.1, title: 'بيتزا خضار (صغير)', title_en: 'Vegetable Pizza (Small)', price: '17,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة', description_en: 'Fresh mix of vegetables (peppers, olives, mushrooms, corn) with cheese' },
+  { id: 43.2, title: 'بيتزا خضار (وسط)', title_en: 'Vegetable Pizza (Medium)', price: '26,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة', description_en: 'Fresh mix of vegetables (peppers, olives, mushrooms, corn) with cheese' },
+  { id: 43.3, title: 'بيتزا خضار (كبير)', title_en: 'Vegetable Pizza (Large)', price: '37,000', category: 'food', image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&q=80&w=400', description: 'مزيج طازج من الخضروات (فلفل، زيتون، فطر، ذرة) مع الجبنة', description_en: 'Fresh mix of vegetables (peppers, olives, mushrooms, corn) with cheese' },
 
-  { id: 44.1, title: 'بيتزا ميكس لحوم (صغير)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي' },
-  { id: 44.2, title: 'بيتزا ميكس لحوم (وسط)', price: '29,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي' },
-  { id: 44.3, title: 'بيتزا ميكس لحوم (كبير)', price: '40,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي' },
+  { id: 44.1, title: 'بيتزا ميكس لحوم (صغير)', title_en: 'Meat Mix Pizza (Small)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي', description_en: 'Pizza rich with a premium selection of different meats for strong flavor lovers' },
+  { id: 44.2, title: 'بيتزا ميكس لحوم (وسط)', title_en: 'Meat Mix Pizza (Medium)', price: '29,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي', description_en: 'Pizza rich with a premium selection of different meats for strong flavor lovers' },
+  { id: 44.3, title: 'بيتزا ميكس لحوم (كبير)', title_en: 'Meat Mix Pizza (Large)', price: '40,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'بيتزا غنية بتشكيلة فاخرة من اللحوم المختلفة لمحبي الطعم القوي', description_en: 'Pizza rich with a premium selection of different meats for strong flavor lovers' },
 
-  { id: 45.1, title: 'بيتزا دجاج (صغير)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة' },
-  { id: 45.2, title: 'بيتزا دجاج (وسط)', price: '28,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة' },
-  { id: 45.3, title: 'بيتزا دجاج (كبير)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة' },
+  { id: 45.1, title: 'بيتزا دجاج (صغير)', title_en: 'Chicken Pizza (Small)', price: '19,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة', description_en: 'Marinated chicken pieces with mayo sauce, cheese, and fresh vegetables' },
+  { id: 45.2, title: 'بيتزا دجاج (وسط)', title_en: 'Chicken Pizza (Medium)', price: '28,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة', description_en: 'Marinated chicken pieces with mayo sauce, cheese, and fresh vegetables' },
+  { id: 45.3, title: 'بيتزا دجاج (كبير)', title_en: 'Chicken Pizza (Large)', price: '39,000', category: 'food', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'قطع الدجاج المتبلة مع صوص المايونيز والجبنة والخضار الطازجة', description_en: 'Marinated chicken pieces with mayo sauce, cheese, and fresh vegetables' },
 
   // --- CALZONE (Category: calzone) ---
-  { id: 46, title: 'كلزوني قولدن (Golden)', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
-  { id: 47, title: 'كلزوني هوت دوق (Hot dog)', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
-  { id: 48, title: 'كلزوني لحمة مفرومة (Minced)', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
-  { id: 49, title: 'كلزوني مشكل لحوم (Mixed)', price: '17,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
-  { id: 49.1, title: 'كلزوني فراخ (Chicken)', price: '16,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
-  { id: 49.2, title: 'كلزوني خضار (Vegetable)', price: '13,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
+  { id: 46, title: 'كلزوني قولدن (Golden)', title_en: 'Golden Calzone', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
+  { id: 47, title: 'كلزوني هوت دوق (Hot dog)', title_en: 'Hot Dog Calzone', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
+  { id: 48, title: 'كلزوني لحمة مفرومة (Minced)', title_en: 'Minced Meat Calzone', price: '15,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
+  { id: 49, title: 'كلزوني مشكل لحوم (Mixed)', title_en: 'Mixed Meat Calzone', price: '17,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
+  { id: 49.1, title: 'كلزوني فراخ (Chicken)', title_en: 'Chicken Calzone', price: '16,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=400' },
+  { id: 49.2, title: 'كلزوني خضار (Vegetable)', title_en: 'Vegetable Calzone', price: '13,000', category: 'calzone', image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=400' },
 
   // --- FRIES (Category: fries) ---
-  { id: 50.1, title: 'شيلي فرايز (صغير)', price: '6,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس مقرمشة مع خلطة الشيري الحارة والجبنة السائلة' },
-  { id: 50.2, title: 'شيلي فرايز (كبير)', price: '9,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس مقرمشة مع خلطة الشيري الحارة والجبنة السائلة' },
-  { id: 51.1, title: 'لافا فرايز (صغير)', price: '11,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس غارقة بصوص اللافا الساخن والجبنة ومزيج من الإضافات المميزة' },
-  { id: 51.2, title: 'لافا فرايز (كبير)', price: '19,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس غارقة بصوص اللافا الساخن والجبنة ومزيج من الإضافات المميزة' },
+  { id: 50.1, title: 'شيلي فرايز (صغير)', title_en: 'Chili Fries (Small)', price: '6,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس مقرمشة مع خلطة الشيري الحارة والجبنة السائلة', description_en: 'Crispy fries with hot chili mix and melted cheese' },
+  { id: 50.2, title: 'شيلي فرايز (كبير)', title_en: 'Chili Fries (Large)', price: '9,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس مقرمشة مع خلطة الشيري الحارة والجبنة السائلة', description_en: 'Crispy fries with hot chili mix and melted cheese' },
+  { id: 51.1, title: 'لافا فرايز (صغير)', title_en: 'Lava Fries (Small)', price: '11,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس غارقة بصوص اللافا الساخن والجبنة ومزيج من الإضافات المميزة', description_en: 'Fries drenched in hot lava sauce and cheese with a mix of special toppings' },
+  { id: 51.2, title: 'لافا فرايز (كبير)', title_en: 'Lava Fries (Large)', price: '19,000', category: 'fries', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&q=80&w=400', description: 'بطاطس غارقة بصوص اللافا الساخن والجبنة ومزيج من الإضافات المميزة', description_en: 'Fries drenched in hot lava sauce and cheese with a mix of special toppings' },
 
   // --- EXTRAS (Category: extras) ---
-  { id: 60.1, title: 'إضافة هلابينو (صغير)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق' },
-  { id: 60.2, title: 'إضافة هلابينو (وسط)', price: '4,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق' },
-  { id: 60.3, title: 'إضافة هلابينو (كبير)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق' },
+  { id: 60.1, title: 'إضافة هلابينو (صغير)', title_en: 'Extra Jalapeño (Small)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق', description_en: 'Add hot jalapeño peppers for extra flavor' },
+  { id: 60.2, title: 'إضافة هلابينو (وسط)', title_en: 'Extra Jalapeño (Medium)', price: '4,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق', description_en: 'Add hot jalapeño peppers for extra flavor' },
+  { id: 60.3, title: 'إضافة هلابينو (كبير)', title_en: 'Extra Jalapeño (Large)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1594411130691-38e6e58e3ca2?auto=format&fit=crop&q=80&w=400', description: 'إضافة فلفل هلابينو حار لتعزيز المذاق', description_en: 'Add hot jalapeño peppers for extra flavor' },
 
-  { id: 61.1, title: 'إضافة هوت دوق (صغير)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية' },
-  { id: 61.2, title: 'إضافة هوت دوق (وسط)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية' },
-  { id: 61.3, title: 'إضافة هوت دوق (كبير)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية' },
+  { id: 61.1, title: 'إضافة هوت دوق (صغير)', title_en: 'Extra Hot Dog (Small)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية', description_en: 'Add extra hot dog pieces' },
+  { id: 61.2, title: 'إضافة هوت دوق (وسط)', title_en: 'Extra Hot Dog (Medium)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية', description_en: 'Add extra hot dog pieces' },
+  { id: 61.3, title: 'إضافة هوت دوق (كبير)', title_en: 'Extra Hot Dog (Large)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع هوت دوق إضافية', description_en: 'Add extra hot dog pieces' },
 
-  { id: 62.1, title: 'إضافة فراخ (صغير)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية' },
-  { id: 62.2, title: 'إضافة فراخ (وسط)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية' },
-  { id: 62.3, title: 'إضافة فراخ (كبير)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية' },
+  { id: 62.1, title: 'إضافة فراخ (صغير)', title_en: 'Extra Chicken (Small)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية', description_en: 'Add extra marinated chicken pieces' },
+  { id: 62.2, title: 'إضافة فراخ (وسط)', title_en: 'Extra Chicken (Medium)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية', description_en: 'Add extra marinated chicken pieces' },
+  { id: 62.3, title: 'إضافة فراخ (كبير)', title_en: 'Extra Chicken (Large)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة قطع دجاج متبلة إضافية', description_en: 'Add extra marinated chicken pieces' },
 
-  { id: 63.1, title: 'إضافة مفروم (صغير)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي' },
-  { id: 63.2, title: 'إضافة مفروم (وسط)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي' },
-  { id: 63.3, title: 'إضافة مفروم (كبير)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي' },
+  { id: 63.1, title: 'إضافة مفروم (صغير)', title_en: 'Extra Minced Meat (Small)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي', description_en: 'Add extra minced meat' },
+  { id: 63.2, title: 'إضافة مفروم (وسط)', title_en: 'Extra Minced Meat (Medium)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي', description_en: 'Add extra minced meat' },
+  { id: 63.3, title: 'إضافة مفروم (كبير)', title_en: 'Extra Minced Meat (Large)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=400', description: 'إضافة لحم مفروم إضافي', description_en: 'Add extra minced meat' },
 
-  { id: 64.1, title: 'إضافة جبنة شيدر/موزريلا (صغير)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم' },
-  { id: 64.2, title: 'إضافة جبنة شيدر/موزريلا (وسط)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم' },
-  { id: 64.3, title: 'إضافة جبنة شيدر/موزريلا (كبير)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم' },
+  { id: 64.1, title: 'إضافة جبنة شيدر/موزريلا (صغير)', title_en: 'Extra Cheddar/Mozzarella (Small)', price: '3,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم', description_en: 'Add extra cheddar or mozzarella cheese for more flavor' },
+  { id: 64.2, title: 'إضافة جبنة شيدر/موزريلا (وسط)', title_en: 'Extra Cheddar/Mozzarella (Medium)', price: '5,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم', description_en: 'Add extra cheddar or mozzarella cheese for more flavor' },
+  { id: 64.3, title: 'إضافة جبنة شيدر/موزريلا (كبير)', title_en: 'Extra Cheddar/Mozzarella (Large)', price: '7,000', category: 'extras', image: 'https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=400', description: 'إضافة جبنة شيدر أو موزريلا إضافية لمزيد من الطعم', description_en: 'Add extra cheddar or mozzarella cheese for more flavor' },
 
   // --- ICE CREAM (Category: ice-cream) ---
-  { id: 70, title: 'آيسكريم اسكوب (Scoop)', price: '3,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'أسكوب آيسكريم من اختيارك من نكهاتنا المتنوعة' },
-  { id: 71, title: 'صوص شوكولاتة (Chocolate)', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=400', description: 'إضافة صوص الشوكولاتة الغني' },
-  { id: 72, title: 'صوص فراولة (Strawberry)', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'إضافة صوص الفراولة الطازج' },
-  { id: 73, title: 'صوص لوتس (Lotus)', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'إضافة زبدة اللوتس اللذيذة' },
-  { id: 74, title: 'صوص ميكس (Mix)', price: '2,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'مزيج من الصوصات المختلفة حسب اختيارك' },
+  { id: 70, title: 'آيسكريم اسكوب (Scoop)', title_en: 'Ice Cream Scoop', price: '3,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'أسكوب آيسكريم من اختيارك من نكهاتنا المتنوعة', description_en: 'A scoop of ice cream from your choice of our various flavors' },
+  { id: 71, title: 'صوص شوكولاتة (Chocolate)', title_en: 'Chocolate Sauce', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=400', description: 'إضافة صوص الشوكولاتة الغني', description_en: 'Add rich chocolate sauce' },
+  { id: 72, title: 'صوص فراولة (Strawberry)', title_en: 'Strawberry Sauce', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'إضافة صوص الفراولة الطازج', description_en: 'Add fresh strawberry sauce' },
+  { id: 73, title: 'صوص لوتس (Lotus)', title_en: 'Lotus Sauce', price: '1,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'إضافة زبدة اللوتس اللذيذة', description_en: 'Add delicious Lotus butter' },
+  { id: 74, title: 'صوص ميكس (Mix)', title_en: 'Mix Sauce', price: '2,000', category: 'ice-cream', image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&q=80&w=400', description: 'مزيج من الصوصات المختلفة حسب اختيارك', description_en: 'A mix of different sauces of your choice' },
 
   // --- DESSERTS (Category: desserts) ---
   
   // Desserts & Ice Cream (Image 4)
-  { id: 52, title: 'نوتيلا رول (شوكولاته/لوتس)', price: '15,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400' },
-  { id: 53, title: 'نوتيلا رول ميكس صوص', price: '17,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400' },
-  { id: 54, title: 'تشيز كيك فاخر', price: '16,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=400' },
-  { id: 55, title: 'وافل قولدن ميكس', price: '16,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1585145033838-efce1b7832be?auto=format&fit=crop&q=80&w=400' },
+  { id: 52, title: 'نوتيلا رول (شوكولاته/لوتس)', title_en: 'Nutella Roll (Chocolate/Lotus)', price: '15,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400' },
+  { id: 53, title: 'نوتيلا رول ميكس صوص', title_en: 'Nutella Roll Mix Sauce', price: '17,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=400' },
+  { id: 54, title: 'تشيز كيك فاخر', title_en: 'Premium Cheesecake', price: '16,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=400' },
+  { id: 55, title: 'وافل قولدن ميكس', title_en: 'Golden Mix Waffle', price: '16,000', category: 'desserts', image: 'https://images.unsplash.com/photo-1585145033838-efce1b7832be?auto=format&fit=crop&q=80&w=400' },
 
   // --- SHISHA (Category: shisha) ---
-  { id: 80, title: 'جراك / نعناع / الوسيم / أفندينا', price: '8,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 81, title: 'سلطان (Sultan)', price: '9,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 82, title: 'إشبيلية (Ashbilia)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 83, title: 'نعناع (Mint)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 84, title: 'بطيخ (Watermelon)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 85, title: 'شمام (Cantaloupe)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 86, title: 'عنب (Grapes)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 87, title: 'شوكلاتة (Chocolate)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 88, title: 'ليمون نعناع (Lemon Mint)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 89, title: 'ايس نعناع (Mint Ice)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 90, title: 'منقة (Mango)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 91, title: 'توت (Berry)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 92, title: 'فراولة كريمة (Strawberry Cream)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 93, title: 'مستكة (Mastic)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 94, title: 'تفاح (Apple)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 95, title: 'ريد بول (Red Bull)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 96, title: 'بلو ميكس (Blue Mix)', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 97, title: 'لبان فاخر (Luxurious Gum)', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 98, title: 'لبان نعناع فاخر (Luxurious Mint Gum)', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 99, title: 'نعناع فاخر (Luxurious Mint)', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 100, title: 'ميكس فواكة (Fruit Mix)', price: '11,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 101, title: 'ميكس جراك (Jarak Mix)', price: '9,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 102, title: '3×1', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
-  { id: 103, title: 'لي طبي (Medical Hose)', price: '2,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' }
+  { id: 80, title: 'جراك / نعناع / الوسيم / أفندينا', title_en: 'Jurak / Mint / Al-Waseem / Afandina', price: '8,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 81, title: 'سلطان (Sultan)', title_en: 'Sultan', price: '9,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 82, title: 'إشبيلية (Ashbilia)', title_en: 'Ashbilia', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 83, title: 'نعناع (Mint)', title_en: 'Mint', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 84, title: 'بطيخ (Watermelon)', title_en: 'Watermelon', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 85, title: 'شمام (Cantaloupe)', title_en: 'Cantaloupe', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 86, title: 'عنب (Grapes)', title_en: 'Grapes', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 87, title: 'شوكلاتة (Chocolate)', title_en: 'Chocolate', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 88, title: 'ليمون نعناع (Lemon Mint)', title_en: 'Lemon Mint', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 89, title: 'ايس نعناع (Mint Ice)', title_en: 'Mint Ice', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 90, title: 'منقة (Mango)', title_en: 'Mango', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 91, title: 'توت (Berry)', title_en: 'Berry', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 92, title: 'فراولة كريمة (Strawberry Cream)', title_en: 'Strawberry Cream', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 93, title: 'مستكة (Mastic)', title_en: 'Mastic', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 94, title: 'تفاح (Apple)', title_en: 'Apple', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 95, title: 'ريد بول (Red Bull)', title_en: 'Red Bull', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 96, title: 'بلو ميكس (Blue Mix)', title_en: 'Blue Mix', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 97, title: 'لبان فاخر (Luxurious Gum)', title_en: 'Luxurious Gum', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 98, title: 'لبان نعناع فاخر (Luxurious Mint Gum)', title_en: 'Luxurious Mint Gum', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 99, title: 'نعناع فاخر (Luxurious Mint)', title_en: 'Luxurious Mint', price: '12,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 100, title: 'ميكس فواكة (Fruit Mix)', title_en: 'Fruit Mix', price: '11,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 101, title: 'ميكس جراك (Jarak Mix)', title_en: 'Jarak Mix', price: '9,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 102, title: '3×1', title_en: '3×1', price: '10,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' },
+  { id: 103, title: 'لي طبي (Medical Hose)', title_en: 'Medical Hose', price: '2,000', category: 'shisha', image: 'https://images.unsplash.com/photo-1510137600163-2729bc6959a6?auto=format&fit=crop&q=80&w=400' }
 
 ];
 
@@ -229,10 +229,11 @@ function init() {
       }
 
       // تصفية المصفوفة بناءً على الاسم أو الوصف
-      const searchFiltered = menuItems.filter(item => 
-        item.title.toLowerCase().includes(term) || 
-        (item.description && item.description.toLowerCase().includes(term))
-      );
+      const searchFiltered = menuItems.filter(item => {
+        const title = currentLang === 'ar' ? item.title : (item.title_en || item.title);
+        const desc = currentLang === 'ar' ? (item.description || '') : (item.description_en || item.description || '');
+        return title.toLowerCase().includes(term) || desc.toLowerCase().includes(term);
+      });
       
       renderItemsFromList(searchFiltered);
     });
@@ -258,6 +259,11 @@ function init() {
       if (searchInput) {
         searchInput.placeholder = currentLang === 'ar' ? 'مثلاً: بيتزا، عصير، آيس كريم...' : 'Example: Pizza, Juice, Ice Cream...';
       }
+
+      // إعادة عرض المنيو باللغة الجديدة
+      const activeBtn = document.querySelector('.category-btn.bg-golden');
+      const category = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+      renderItems(category);
     });
   }
 
@@ -270,12 +276,18 @@ function init() {
     const processedTitles = new Set();
 
     itemsList.forEach(item => {
+      // اختيار العنوان بناءً على اللغة
+      const itemTitle = currentLang === 'ar' ? item.title : (item.title_en || item.title);
       // استخراج الاسم الأساسي بدون الحجم المكتوب بين قوسين
-      const baseTitle = item.title.split(' (')[0];
+      const baseTitle = itemTitle.split(' (')[0];
+      
       if (processedTitles.has(baseTitle)) return;
 
       // العثور على جميع الأحجام لنفس الصنف
-      const groupItems = itemsList.filter(mi => mi.title.startsWith(baseTitle));
+      const groupItems = itemsList.filter(mi => {
+        const miTitle = currentLang === 'ar' ? mi.title : (mi.title_en || mi.title);
+        return miTitle.startsWith(baseTitle);
+      });
       
       groups.push({
         baseTitle,
@@ -301,7 +313,8 @@ function init() {
         });
 
         priceDisplay = sorted.map(ri => {
-          let sizeMatch = ri.title.match(/\((.*?)\)/);
+          const riTitle = currentLang === 'ar' ? ri.title : (ri.title_en || ri.title);
+          let sizeMatch = riTitle.match(/\((.*?)\)/);
           let sizeLabel = sizeMatch ? sizeMatch[1] : '';
           return `<span class="whitespace-nowrap">${sizeLabel} <span class="font-bold">${ri.price}</span></span>`;
         }).join(' <span class="mx-1 opacity-50">|</span> ');
@@ -352,12 +365,19 @@ function init() {
   // فتح نافذة تفاصيل المنتج
   function openProductModal(item) {
     modalImage.src = item.image;
-    const baseTitle = item.title.split(' (')[0];
+    
+    const itemTitle = currentLang === 'ar' ? item.title : (item.title_en || item.title);
+    const baseTitle = itemTitle.split(' (')[0];
     modalTitle.textContent = baseTitle;
-    modalDesc.textContent = item.description || 'تذوق أشهى مذاق في كافيه قولدن، مجهز خصيصاً بمكونات طازجة وجودة عالية.';
+    
+    const description = currentLang === 'ar' ? (item.description || 'تذوق أشهى مذاق في كافيه قولدن، مجهز خصيصاً بمكونات طازجة وجودة عالية.') : (item.description_en || 'Taste the most delicious flavors at Golden Cafe, specially prepared with fresh ingredients and high quality.');
+    modalDesc.textContent = description;
 
     // جلب جميع الأحجام المرتبطة بهذا الصنف لعرضها في النافذة
-    const relatedItems = menuItems.filter(mi => mi.title.startsWith(baseTitle));
+    const relatedItems = menuItems.filter(mi => {
+      const miTitle = currentLang === 'ar' ? mi.title : (mi.title_en || mi.title);
+      return miTitle.startsWith(baseTitle);
+    });
     pricesContainer.innerHTML = '';
     
     if (relatedItems.length > 0) {
